@@ -17,7 +17,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog';
-import { Plus, Search, BookOpen, Sparkles, Trophy, ListChecks } from 'lucide-react';
+import { Plus, Search, BookOpen, Sparkles, Trophy, ListChecks, Flag } from 'lucide-react';
 import { deleteWordList } from '@/utils/storage';
 import { showSuccess } from '@/utils/toast';
 
@@ -75,6 +75,18 @@ const Dashboard = () => {
           <p className="text-xl text-purple-600 dark:text-purple-300 font-semibold">
             🌟 Learn to spell amazing words! 🌟
           </p>
+          
+          {/* Finnish Practice Button */}
+          <div className="mt-6">
+            <Button
+              onClick={() => navigate('/finnish-practice')}
+              size="lg"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold text-xl px-8 py-6 shadow-2xl transform hover:scale-105 transition-transform border-4 border-white"
+            >
+              <Flag className="w-6 h-6 mr-2" />
+              🇫🇮 Learn Finnish Words!
+            </Button>
+          </div>
         </div>
 
         {/* Tabs for different views */}

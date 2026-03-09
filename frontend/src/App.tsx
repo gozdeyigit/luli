@@ -9,6 +9,7 @@ import CreateWordList from "./pages/CreateWordList";
 import EditWordList from "./pages/EditWordList";
 import TeachingMode from "./pages/TeachingMode";
 import PracticeMode from "./pages/PracticeMode";
+import FinnishPractice from "./pages/FinnishPractice";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/edit/:id" element={<EditWordList />} />
             <Route path="/teach/:id" element={<TeachingMode />} />
             <Route path="/practice/:id" element={<PracticeMode />} />
+            <Route path="/finnish-practice" element={<FinnishPractice />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppProvider>
